@@ -17,6 +17,38 @@
     border: 2px dotted black;
 }
 
+.header {
+    grid-column: 2 / 4;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.user-pic{
+    background: rgb(148, 212, 105);
+    height: 75px;
+    width: 75px;
+}
+
+.picture {
+    height: 50px;
+    width: 50px;
+}
+
+.button {
+    justify-self: center;
+    align-self: center;
+}
+
+
+
+
+
+
+
+
+
 .sidebar {
     grid-row: 1 / 4;
     background: linear-gradient(to right, #58b9e6, #b4ddf0);
@@ -44,12 +76,14 @@
     padding: 10px;
 }
 
-ul > img {
+ul > img,
+.notification img,
+.search-icon img {
     width: 35px;
     justify-self: right;
 }
 
-.menu ul {
+.menu ul{
     font-size: 22px;
     list-style-type: none;
     display: grid; 
@@ -65,10 +99,7 @@ ul > img {
 
 
 
-.header {
-    grid-column: 2 / 4;
-    background: white;
-}
+
 
 .main-content {
     grid-area: 2 / 2 / 4 / 2;
